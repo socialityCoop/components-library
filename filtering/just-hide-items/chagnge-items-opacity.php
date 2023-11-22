@@ -1,5 +1,5 @@
 /* This is some JS and CSS to filter already displayed items.
-The idea is that we print all items and use JS to hide when filtering. No ajax is used. Good if you don't have a lot of items
+The idea is that we print all items and use JS to change their opacity when filtering. No ajax is used. Good if you don't have a lot of items
 The items need to have a class that shows their category (in the example it is category-[TERMID]). This is usually aready there in WP.
 Printed items is not part of the example. Just print them as you like but remember to put the class as mentioned. You can also use readymade theme elements.
 */
@@ -30,11 +30,33 @@ Printed items is not part of the example. Just print them as you like but rememb
 				var term_id = $(this).data("term");
 				$(this).siblings().removeClass('active-filter');
 				$(this).addClass('active-filter');
-				if(dataterm == 'all'){
-					$('.item').show();
+				iif(dataterm == 'all'){
+					$('.item').css({
+						"opacity": "1",
+						"-webkit-transition": "opacity 0.5s ease-in-out",
+						"-moz-transition": "opacity 0.5s ease-in-out",
+						"-ms-transition": "opacity 0.5s ease-in-out",
+						"-o-transition": "opacity 0.5s ease-in-out",
+						"transition": "opacity 0.5s ease-in-out",
+					});
 				} else {
-					$('.item').hide();
-					$('.item.category-'+term_id).show();
+					$('.item').css({
+						"opacity": "0.3",
+						"-webkit-transition": "opacity 0.5s ease-in-out",
+						"-moz-transition": "opacity 0.5s ease-in-out",
+						"-ms-transition": "opacity 0.5s ease-in-out",
+						"-o-transition": "opacity 0.5s ease-in-out",
+						"transition": "opacity 0.5s ease-in-out",
+					});
+
+					$('.item.category-'+term_id).css({
+						"opacity": "1",
+						"-webkit-transition": "opacity 0.5s ease-in-out",
+						"-moz-transition": "opacity 0.5s ease-in-out",
+						"-ms-transition": "opacity 0.5s ease-in-out",
+						"-o-transition": "opacity 0.5s ease-in-out",
+						"transition": "opacity 0.5s ease-in-out",
+					});
 				}
 			} else {
 				// If already an active filter, do nothing.
