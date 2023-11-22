@@ -9,4 +9,4 @@ Functionality related to calendar funtionality
 ## Filtering
 Funtionality related to filtering items in the front end
 
-1. Just Hide Items  | This snippet use JS to filter already printed items based on category. Hide completely or use opacity
+1. [Just Hide Items](Filtering/1-Just-Hide-Items)  | This snippet use JS to filter already printed items based on category. Hide completely or use opacity
