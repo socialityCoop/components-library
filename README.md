@@ -1,5 +1,5 @@
 # WordPress Components Library
-Little pieces of code making our lifes easier in Sociality
+Little pieces of code making our lives in Sociality easier
 
 ## Calendar
 Functionality related to calendar funtionality
