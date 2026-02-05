@@ -1,13 +1,3 @@
-/* 
-F.1.1 - Just Hide Items ~ Filter printed items (display)
-
-This is some JS and CSS to filter already displayed items.
-The idea is that we print all items and use JS to hide when filtering. No ajax is used. Good if you don't have a lot of items
-The items need to have a class that shows their category (in the example it is category-[TERMID]). This is usually aready there in WP.
-Printed items is not part of the example. Just print them as you like but remember to put the class as mentioned. You can also use readymade theme elements.
-*/
-
-
 //Print the filter buttons
 <div class="concepts-filter button-filters-container">
 	<div class="button-filter f-all" data-term="all">All</div>
