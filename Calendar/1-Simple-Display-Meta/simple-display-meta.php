@@ -1,19 +1,4 @@
-/* 
-C.1 - Simple Display Meta ~ Multiple places and hours
-@requires ACF Pro, due to multiple place and hour for the same date but can modify to use with ACF Free
-
-With this you do the following things:
-1 - Add an ACF meta for any post type (in the example is the core post) to store (A) date and (B) places and hours of event
-2 - Show data as a box inside the post
-3 - A shortcode to show all upcoming events
-*/
-
-//1. Add ACF with JSON or PHP
-
-// JSON see acf-date-meta.json
-// PHP see acf-date-meta.php
-
-//2. Show data as a box inside the post. Put in the relevant single template
+//A. Show data as a box inside the post. Put in the relevant single template
 <?php
 $date = get_field('action_date');
 if(!empty($date)):
@@ -39,7 +24,7 @@ if(!empty($date)):
 	echo $sh;
 ?>
 
-//3. Display all upcoming events
+//B. Display all upcoming events
 <?php 
 	function upcoming_events_function(){
 		$today = date("Ymd");  
