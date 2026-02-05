@@ -10,3 +10,7 @@ Functionality related to calendar funtionality
 Funtionality related to filtering items in the front end
 
 1. [Just Hide Items](Filtering/1-Just-Hide-Items)  | This snippet use JS to filter already printed items based on category. Hide completely or use opacity
+
+## Migration
+
+1. [Redirect legacy posts](Migrations/1-Redirect) | This snippet can be used to redirect legacy posts to new ones with a meta stored in the new WP DB
